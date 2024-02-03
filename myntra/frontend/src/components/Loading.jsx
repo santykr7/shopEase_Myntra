@@ -1,14 +1,14 @@
 import React from "react"
+import "bootstrap/dist/css/bootstrap.min.css"
 
 function Loading() {
   return (
     <div
-      class='d-flex justify-content-center'
-      style={{ width: "5rem", height: "5rem" }}
+      class='spinner-border loader'
+      role='status'
+      style={{ width: "5rem", height: "5rem", margin: "10% 50%" }}
     >
-      <div class='spinner-border' role='status'>
-        <span class='visually-hidden'>Loading...</span>
-      </div>
+      <span class='visually-hidden'>Loading...</span>
     </div>
   )
 }
